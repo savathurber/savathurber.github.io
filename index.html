@@ -28,13 +28,13 @@
 
     /* IMMERSIVE PINE TREE BACKGROUND */
     .tree-bg {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
         height: 80vh; /* Keeps it strictly in the lower/middle portions of the screen */
-        z-index: -1;
+        z-index: 0;
         pointer-events: none;
         overflow: hidden;
         
@@ -61,6 +61,7 @@
       max-width: 1100px;
       margin: 0 auto;
       padding: 0 2rem;
+      z-index: 1;
     }
 
     /* NAVIGATION */
