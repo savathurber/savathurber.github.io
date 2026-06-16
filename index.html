@@ -1,22 +1,3 @@
-<!-- ---
-layout: default
-title: Home
----
-
-# Welcome to My Engineering Portfolio
-
-I am an engineering student focused on design prototyping, environmental systems, and technical problem-solving. I use this space to document my deep-dives into mechanical structures, data analysis, and hardware development.
-
-## 📁 Featured Projects
-Click the links below (or use the navigation menu) to explore my detailed project breakdowns:
-
-* [**Autonomous Marine Environmental Monitor**](/marine-monitor.html) - A physical, biodegradable tracking system.
-* [**Renewable Energy Techno-Economic Analysis**](/energy-analysis.html) - Grid-scale facility financial and technical modeling.
-
----
-*Feel free to explore my work or reach out via the [Contact Page](/contact.html).*
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,19 +22,39 @@ Click the links below (or use the navigation menu) to explore my detailed projec
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       overflow-x: hidden;
       line-height: 1.5;
+      position: relative;
+      z-index: 0;
     }
 
-    /* THE GLOWING BACKGROUND ORB */
-    .glow-bg {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100vw;
-      height: 75vh;
-      background: radial-gradient(circle at 50% 20%, rgba(218, 95, 33, 0.15) 0%, rgba(218, 95, 33, 0.03) 45%, rgba(11, 11, 12, 0) 70%);
-      z-index: -1;
-      pointer-events: none;
+    /* IMMERSIVE PINE TREE BACKGROUND */
+    .tree-bg {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 80vh; /* Keeps it strictly in the lower/middle portions of the screen */
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+        
+        /* The Magic Mask: Fades the image to transparent at the top, left, and right edges */
+        -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0) 100%),
+                            linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0) 100%),
+                    linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+        
+        /* Composites the vertical and horizontal fades together */
+        -webkit-mask-composite: source-in;
+        mask-composite: intersect;
+    }
+    
+    .tree-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the tree scales correctly across aspect ratios */
+        object-position: center bottom; /* Keeps the roots/base anchored at the bottom */
+        opacity: 0.18; /* Keeps it incredibly subtle so text remains highly readable */
     }
 
     .container {
@@ -67,7 +68,9 @@ Click the links below (or use the navigation menu) to explore my detailed projec
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 2rem 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
@@ -82,6 +85,7 @@ Click the links below (or use the navigation menu) to explore my detailed projec
       display: flex;
       gap: 2.5rem;
       align-items: center;
+      display: contents;
     }
 
     .nav-links a {
@@ -111,6 +115,8 @@ Click the links below (or use the navigation menu) to explore my detailed projec
       text-align: center;
       max-width: 850px;
       margin: 0 auto;
+      position: relative;
+      z-index: 2;
     }
 
     .hero-tag {
@@ -118,7 +124,7 @@ Click the links below (or use the navigation menu) to explore my detailed projec
       letter-spacing: 0.15em;
       font-size: 0.75rem;
       font-weight: 700;
-      color: #da5f21;
+      color: #7bab83;
       margin-bottom: 1.5rem;
       display: inline-block;
     }
@@ -147,7 +153,7 @@ Click the links below (or use the navigation menu) to explore my detailed projec
     }
 
     .btn-primary {
-      background: #da5f21;
+      background: #1e7034;
       color: white;
       padding: 0.85rem 2rem;
       font-weight: 600;
@@ -158,7 +164,7 @@ Click the links below (or use the navigation menu) to explore my detailed projec
     }
 
     .btn-primary:hover {
-      background: #f26f2b;
+      background: #113d1d;
     }
 
     .btn-secondary {
@@ -275,7 +281,7 @@ Click the links below (or use the navigation menu) to explore my detailed projec
 
     .card-tag {
       font-size: 0.75rem;
-      color: #da5f21;
+      color: #7bab83;
       background: rgba(218, 95, 33, 0.1);
       padding: 0.25rem 0.75rem;
       border-radius: 4px;
@@ -354,34 +360,35 @@ Click the links below (or use the navigation menu) to explore my detailed projec
 <body>
 
   <!-- BACKGROUND AMBIENT GLOW -->
-  <div class="glow-bg"></div>
+  <div class="tree-bg">
+    <img src="images/pine-tree-background.jpg" alt="Subtle Pine Tree Background">
+  </div>
 
   <div class="container">
     <!-- NAVIGATION BAR -->
     <nav>
-      <div class="logo">ENGINEERING PORTFOLIO</div>
+      <div class="logo">SAVA'S PORTFOLIO</div>
       <div class="nav-links">
         <a href="/index.html">Home</a>
-        <a href="/marine-monitor.html">Marine Monitor</a>
-        <a href="/energy-analysis.html">Energy Analysis</a>
+        <a href="/about-me.html">About Me</a>
+        <a href="projects.html">Projects</a>
         <a href="/contact.html" class="cta-nav">Contact</a>
       </div>
     </nav>
 
     <!-- HERO MAIN SECTION -->
     <section class="hero">
-      <span class="hero-tag">Available for Fall Internships</span>
+      <span class="hero-tag">Environmental Science and Engineering</span>
       <h1>Connecting technical engineering design with sustainable environmental systems.</h1>
       <p>Specializing in geometric CAD modeling, functional physical prototyping for extreme aquatic environments, and end-to-end techno-economic power systems analysis.</p>
       <div class="hero-buttons">
-        <a href="/contact.html" class="btn-primary">Get in Touch</a>
-        <a href="#work" class="btn-secondary">Explore Projects ↓</a>
+        <a href="projects.html" class="btn-primary">Explore Projects</a>
       </div>
     </section>
 
     <!-- CORE CAPABILITIES CHIPS -->
     <section class="skills-section">
-      <div class="skills-title">Core Capabilities & Tools</div>
+      <div class="skills-title">Core Capabilities &amp; Tools</div>
       <div class="chips-container">
         <div class="chip">Autodesk Fusion 360</div>
         <div class="chip">Python Data Analysis</div>
