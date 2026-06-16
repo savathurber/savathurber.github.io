@@ -18,104 +18,434 @@ Click the links below (or use the navigation menu) to explore my detailed projec
 -->
 
 ---
-layout: default
+layout: null
 title: Home
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ODINAUT-INSPIRED DARK THEME STYLING */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: #0b0b0c;
+      color: #f3f4f6;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
 
-<!-- HERO HEADER SECTION -->
-<div style="padding: 3rem 0; margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8;">
-  <p style="text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.85rem; font-weight: 700; color: #586069; margin-bottom: 0.5rem;">
-    Engineering Portfolio
-  </p>
-  <h1 style="font-size: 3rem; font-weight: 800; line-height: 1.15; margin: 0 0 1.5rem 0; letter-spacing: -0.03em;">
-    Connecting technical engineering design with sustainable environmental systems.
-  </h1>
-  <p style="font-size: 1.25rem; line-height: 1.6; color: #444d56; max-width: 42rem; margin-bottom: 2rem;">
-    I specialize in geometric CAD modeling, physical prototyping for high-pressure marine environments, and end-to-end techno-economic grid simulations. 
-  </p>
-  <div>
-    <a href="/contact.html" style="display: inline-block; background-color: #0366d6; color: white; padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 6px; text-decoration: none; margin-right: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-      Get in Touch
-    </a>
-    <a href="#projects" style="display: inline-block; color: #0366d6; padding: 0.75rem 1.5rem; font-weight: 600; text-decoration: none;">
-      Explore Projects ↓
-    </a>
-  </div>
-</div>
+    /* THE GLOWING BACKGROUND ORB */
+    .glow-bg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 75vh;
+      background: radial-gradient(circle at 50% 20%, rgba(218, 95, 33, 0.15) 0%, rgba(218, 95, 33, 0.03) 45%, rgba(11, 11, 12, 0) 70%);
+      z-index: -1;
+      pointer-events: none;
+    }
 
-<!-- TECHNICAL CHIPS/TAGS SECTION -->
-<div style="margin-bottom: 4rem;">
-  <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; color: #586069; margin-bottom: 1rem;">
-    Core Capabilities
-  </p>
-  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-    <span style="background: #f1f8ff; color: #0366d6; padding: 0.35rem 0.85rem; border-radius: 2rem; font-size: 0.875rem; font-weight: 600;">Autodesk Fusion 360</span>
-    <span style="background: #f1f8ff; color: #0366d6; padding: 0.35rem 0.85rem; border-radius: 2rem; font-size: 0.875rem; font-weight: 600;">Python Data Analysis</span>
-    <span style="background: #f1f8ff; color: #0366d6; padding: 0.35rem 0.85rem; border-radius: 2rem; font-size: 0.875rem; font-weight: 600;">MATLAB Simulation</span>
-    <span style="background: #f1f8ff; color: #0366d6; padding: 0.35rem 0.85rem; border-radius: 2rem; font-size: 0.875rem; font-weight: 600;">Additive Manufacturing</span>
-    <span style="background: #f1f8ff; color: #0366d6; padding: 0.35rem 0.85rem; border-radius: 2rem; font-size: 0.875rem; font-weight: 600;">Techno-Economic Modeling</span>
-  </div>
-</div>
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
 
-<!-- FEATURED PROJECTS SECTION -->
-<div id="projects" style="margin-bottom: 4rem;">
-  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 0.75rem;">
-    <h2 style="font-size: 1.75rem; font-weight: 700; margin: 0;">Featured Projects</h2>
-    <span style="color: #586069; font-size: 0.9rem;">Documented Engineering Systems</span>
-  </div>
+    /* NAVIGATION */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
 
-  <!-- PROJECT CARD 1 -->
-  <div style="background: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: transform 0.2s;">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-      <h3 style="margin: 0; font-size: 1.4rem; font-weight: 700;">
-        🤖 Autonomous Marine Environmental Monitor
-      </h3>
-      <span style="font-size: 0.85rem; color: #586069; background: #f6f8fa; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">Hardware / Prototyping</span>
-    </div>
-    <p style="color: #444d56; line-height: 1.6; margin-bottom: 1.5rem;">
-      A physical, biodegradable robotic system engineered to track surface anomalies like offshore oil spills and monitor structural environmental vitals. Features complex geometric buoyancy chambers designed via CAD.
-    </p>
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-      <div style="display: flex; gap: 0.5rem;">
-        <code style="font-size: 0.8rem; background: #f6f8fa; padding: 0.2rem 0.4rem; border-radius: 4px;">Fusion 360</code>
-        <code style="font-size: 0.8rem; background: #f6f8fa; padding: 0.2rem 0.4rem; border-radius: 4px;">Biodegradable Polymers</code>
+    .logo {
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+    }
+
+    .nav-links a {
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .cta-nav {
+      background: #ffffff;
+      color: #0b0b0c !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 2rem;
+      font-size: 0.85rem !important;
+      font-weight: 600 !important;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      padding: 8rem 0 6rem 0;
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .hero-tag {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #da5f21;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #9ca3af;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+      font-weight: 400;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .btn-primary {
+      background: #da5f21;
+      color: white;
+      padding: 0.85rem 2rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #f26f2b;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      padding: 0.85rem 2rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      background: rgba(255, 255, 255, 0.02);
+      transition: background 0.2s, border 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* CORE CAPABILITIES CHIPS */
+    .skills-section {
+      padding: 3rem 0;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      margin-bottom: 6rem;
+    }
+
+    .skills-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      color: #6b7280;
+      margin-bottom: 1.5rem;
+    }
+
+    .chips-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .chip {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #d1d5db;
+      padding: 0.4rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* PROJECT CARDS Grid */
+    .projects-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3rem;
+    }
+
+    .projects-header h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .projects-header span {
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 8rem;
+    }
+
+    @media (max-width: 768px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .project-card:hover {
+      border-color: rgba(218, 95, 33, 0.3);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-tag {
+      font-size: 0.75rem;
+      color: #da5f21;
+      background: rgba(218, 95, 33, 0.1);
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+
+    .project-card p {
+      color: #9ca3af;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 1.5rem;
+      margin-top: auto;
+    }
+
+    .tech-used {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .tech-tag {
+      font-family: monospace;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    .project-link {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .project-card:hover .project-link {
+      color: #da5f21;
+    }
+
+    /* FOOTER CTA */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 5rem 0;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    footer h3 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    footer p {
+      color: #9ca3af;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BACKGROUND AMBIENT GLOW -->
+  <div class="glow-bg"></div>
+
+  <div class="container">
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <div class="logo">ENGINEERING PORTFOLIO</div>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/marine-monitor.html">Marine Monitor</a>
+        <a href="/energy-analysis.html">Energy Analysis</a>
+        <a href="/contact.html" class="cta-nav">Contact</a>
       </div>
-      <a href="/marine-monitor.html" style="font-weight: 600; color: #0366d6; text-decoration: none;">
-        View Technical Breakdown →
-      </a>
-    </div>
-  </div>
+    </nav>
 
-  <!-- PROJECT CARD 2 -->
-  <div style="background: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-      <h3 style="margin: 0; font-size: 1.4rem; font-weight: 700;">
-        📈 Renewable Energy Techno-Economic Analysis
-      </h3>
-      <span style="font-size: 0.85rem; color: #586069; background: #f6f8fa; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">Simulation / Infrastructure</span>
-    </div>
-    <p style="color: #444d56; line-height: 1.6; margin-bottom: 1.5rem;">
-      An end-to-end techno-economic proposal for a 30MW utility facility. Evaluated operational asset lifecycle expenditures (OPEX), regional grid integration mechanics, community impact constraints, and financial IRR thresholds.
-    </p>
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-      <div style="display: flex; gap: 0.5rem;">
-        <code style="font-size: 0.8rem; background: #f6f8fa; padding: 0.2rem 0.4rem; border-radius: 4px;">Python</code>
-        <code style="font-size: 0.8rem; background: #f6f8fa; padding: 0.2rem 0.4rem; border-radius: 4px;">Asset Economics</code>
+    <!-- HERO MAIN SECTION -->
+    <section class="hero">
+      <span class="hero-tag">Available for Fall Internships</span>
+      <h1>Connecting technical engineering design with sustainable environmental systems.</h1>
+      <p>Specializing in geometric CAD modeling, functional physical prototyping for extreme aquatic environments, and end-to-end techno-economic power systems analysis.</p>
+      <div class="hero-buttons">
+        <a href="/contact.html" class="btn-primary">Get in Touch</a>
+        <a href="#work" class="btn-secondary">Explore Projects ↓</a>
       </div>
-      <a href="/energy-analysis.html" style="font-weight: 600; color: #0366d6; text-decoration: none;">
-        View Project Proposal →
-      </a>
-    </div>
-  </div>
-</div>
+    </section>
 
-<!-- CALL TO ACTION FOOTER -->
-<div style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 2.5rem; text-align: center;">
-  <h3 style="margin-top: 0; font-size: 1.5rem; font-weight: 700;">Looking for a technical problem solver?</h3>
-  <p style="color: #444d56; margin-bottom: 1.5rem; max-width: 32rem; margin-left: auto; margin-right: auto;">
-    I am always looking to collaborate on complex engineering design challenges, field testing, or modeling pipelines.
-  </p>
-  <a href="/contact.html" style="display: inline-block; background-color: #24292e; color: white; padding: 0.75rem 2rem; font-weight: 600; border-radius: 6px; text-decoration: none;">
-    Let's Connect
-  </a>
-</div>
+    <!-- CORE CAPABILITIES CHIPS -->
+    <section class="skills-section">
+      <div class="skills-title">Core Capabilities & Tools</div>
+      <div class="chips-container">
+        <div class="chip">Autodesk Fusion 360</div>
+        <div class="chip">Python Data Analysis</div>
+        <div class="chip">MATLAB Simulation</div>
+        <div class="chip">Additive Manufacturing</div>
+        <div class="chip">Techno-Economic Modeling</div>
+      </div>
+    </section>
+
+    <!-- MAIN PROJECTS SECTION -->
+    <section id="work">
+      <div class="projects-header">
+        <h2>Featured Systems</h2>
+        <span>Selected Works (2026)</span>
+      </div>
+
+      <div class="project-grid">
+        <!-- CARD 1 -->
+        <div class="project-card">
+          <div>
+            <div class="card-meta">
+              <span class="card-tag">Hardware / Robotics</span>
+            </div>
+            <h3>Autonomous Marine Environmental Monitor</h3>
+            <p>A physical, biodegradable robotic tracking system engineered to monitor marine vitals and detect offshore surface oil anomalies. Built featuring custom internal geometric honeycomb buoyancies modeled via CAD.</p>
+          </div>
+          <div class="card-footer">
+            <div class="tech-used">
+              <span class="tech-tag">Fusion 360</span>
+            </div>
+            <a href="/marine-monitor.html" class="project-link">View System Details →</a>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="project-card">
+          <div>
+            <div class="card-meta">
+              <span class="card-tag">Simulation / Economics</span>
+            </div>
+            <h3>Renewable Energy Techno-Economic Analysis</h3>
+            <p>An end-to-end technical proposal and simulation for a grid-scale utility project. Quantified lifetime asset expenditures (OPEX), regional grid loading integration, and critical internal financial returns (IRR).</p>
+          </div>
+          <div class="card-footer">
+            <div class="tech-used">
+              <span class="tech-tag">Python</span>
+            </div>
+            <a href="/energy-analysis.html" class="project-link">View Analysis Case →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION FOOTER -->
+    <footer>
+      <h3>Interested in collaborating?</h3>
+      <p>Seeking technical challenges at the intersection of infrastructure, deployment, and data modeling.</p>
+      <a href="/contact.html" class="btn-secondary">Let's Connect</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
