@@ -6,10 +6,10 @@ theme: jekyll-theme-architect
 theme_config:
   navigation:
     - text: "Home"
-      url: "/"
+      url: "/index.html"
     - text: "Marine Monitor"
-      url: "/marine-monitor/"
+      url: "/marine-monitor.html"
     - text: "Energy Analysis"
-      url: "/energy-analysis/"
+      url: "/energy-analysis.html"
     - text: "Contact"
-      url: "/contact/"
+      url: "/contact.html"
