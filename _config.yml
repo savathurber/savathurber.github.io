@@ -1,0 +1,15 @@
+title: Your Name Portfolio
+description: Engineering Portfolio & Project Documentation
+theme: jekyll-theme-architect
+
+# This builds your navigation menu at the top of your pages
+theme_config:
+  navigation:
+    - text: "Home"
+      url: "/"
+    - text: "Marine Monitor"
+      url: "/marine-monitor/"
+    - text: "Energy Analysis"
+      url: "/energy-analysis/"
+    - text: "Contact"
+      url: "/contact/"
