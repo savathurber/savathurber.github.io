@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mary's River Basin Geothermal Power Plant | Sava Thurber</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#0b0b0c;
+color:#f5f5f5;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+.container{
+width:min(1100px,90%);
+margin:auto;
+}
+
+section{
+padding:120px 0;
+}
+
+h1{
+font-size:4.5rem;
+font-weight:800;
+line-height:1.05;
+letter-spacing:-3px;
+}
+
+h2{
+font-size:2.4rem;
+font-weight:700;
+margin-bottom:30px;
+letter-spacing:-1px;
+}
+
+h3{
+font-size:1.3rem;
+font-weight:600;
+margin-bottom:16px;
+}
+
+p{
+color:#9ca3af;
+font-size:1.05rem;
+}
+
+a{
+text-decoration:none;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+.section-subtitle{
+color:#22c55e;
+font-size:.8rem;
+font-weight:700;
+letter-spacing:2px;
+text-transform:uppercase;
+margin-bottom:18px;
+}
+
+.divider{
+width:100%;
+height:1px;
+background:rgba(255,255,255,.05);
+margin-top:120px;
+}
+
+/* NAVIGATION */
+
+nav{
+position:sticky;
+top:0;
+backdrop-filter:blur(15px);
+background:rgba(11,11,12,.75);
+z-index:100;
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.nav-container{
+width:min(1200px,92%);
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:22px 0;
+}
+
+.logo{
+font-weight:700;
+font-size:1.1rem;
+letter-spacing:-.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  display: contents;
+}
+
+
+.nav-links a{
+color:#b5b5b5;
+font-size:.95rem;
+font-weight: 500;
+transition:.25s;
+}
+
+.nav-links a:hover{
+color:white;
+}
+
+.contact-button{
+background:#1f7a37;
+padding:12px 24px;
+border-radius:999px;
+color:white !important;
+font-weight:600;
+}
+
+/* HERO */
+
+.hero{
+padding-top:140px;
+padding-bottom:130px;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:70px;
+align-items:center;
+}
+
+.hero-text p{
+font-size:1.15rem;
+margin-top:35px;
+margin-bottom:50px;
+max-width:650px;
+}
+
+.hero-buttons{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.primary-button{
+background:#1f7a37;
+padding:16px 28px;
+border-radius:10px;
+font-weight:600;
+color:white;
+transition:.25s;
+}
+
+.primary-button:hover{
+transform:translateY(-3px);
+}
+
+.secondary-button{
+border:1px solid rgba(255,255,255,.12);
+padding:16px 28px;
+border-radius:10px;
+font-weight:600;
+color:white;
+transition:.25s;
+}
+
+.secondary-button:hover{
+background:rgba(255,255,255,.03);
+}
+
+.hero-image{
+height:500px;
+background:linear-gradient(145deg,#101113,#161719);
+border:1px solid rgba(255,255,255,.05);
+border-radius:24px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#666;
+font-size:.95rem;
+}
+
+/* METRICS */
+
+.metrics-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+margin-top:60px;
+}
+
+.metric-card{
+background:#121315;
+border:1px solid rgba(255,255,255,.05);
+border-radius:22px;
+padding:45px;
+transition:.35s;
+}
+
+.metric-card:hover{
+transform:translateY(-8px);
+border-color:rgba(34,197,94,.25);
+}
+
+.metric-number{
+font-size:3rem;
+font-weight:800;
+color:white;
+margin-bottom:15px;
+}
+
+.metric-label{
+color:#8f949d;
+}
+
+/* OVERVIEW */
+
+.overview-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:70px;
+}
+
+.overview-card{
+background:#121315;
+border:1px solid rgba(255,255,255,.05);
+border-radius:22px;
+padding:50px;
+transition:.3s;
+}
+
+.overview-card:hover{
+border-color:rgba(34,197,94,.25);
+}
+
+.overview-card p{
+margin-top:20px;
+}
+
+/* HIGHLIGHT BANNER */
+
+.highlight{
+margin-top:80px;
+padding:60px;
+border-radius:30px;
+background:linear-gradient(135deg,#121315,#17181b);
+border:1px solid rgba(255,255,255,.05);
+}
+
+.highlight h2{
+margin-bottom:25px;
+}
+
+.highlight p{
+max-width:850px;
+font-size:1.1rem;
+}
+
+/* QUOTE */
+
+.quote-block{
+margin-top:80px;
+padding:60px;
+border-left:4px solid #22c55e;
+background:#121315;
+border-radius:0 20px 20px 0;
+}
+
+.quote-block p{
+font-size:1.2rem;
+color:#d1d5db;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero-grid{
+grid-template-columns:1fr;
+}
+
+.metrics-grid{
+grid-template-columns:1fr;
+}
+
+.overview-grid{
+grid-template-columns:1fr;
+}
+
+h1{
+font-size:3rem;
+}
+
+section{
+padding:90px 0;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+SAVA THURBER
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="projects.html">Projects</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html" class="contact-button">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div class="hero-text">
+
+<div class="section-subtitle">
+Energy Systems Engineering Case Study
+</div>
+
+<h1>
+Mary's River Basin Geothermal Power Plant
+</h1>
+
+<p>
+
+Developed a complete systems-level feasibility study for a 30 MW binary-cycle geothermal power plant in Nevada, integrating geology, thermodynamics, economics, environmental analysis, permitting pathways, stakeholder engagement, and grid interconnection strategy.
+
+</p>
+
+<div class="hero-buttons">
+
+<a class="primary-button" href="#contributions">
+View Contributions
+</a>
+
+<a class="secondary-button" href="projects.html">
+Back to Projects
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+[ PLACEHOLDER FOR MAP OF MARY'S RIVER BASIN OR HERO IMAGE ]
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Project Snapshot
+</div>
+
+<h2>
+Key Metrics
+</h2>
+
+<div class="metrics-grid">
+
+<div class="metric-card">
+<div class="metric-number">
+30 MW
+</div>
+<div class="metric-label">
+Plant Capacity
+</div>
+</div>
+
+<div class="metric-card">
+<div class="metric-number">
+252 GWh
+</div>
+<div class="metric-label">
+Annual Energy Generation
+</div>
+</div>
+
+<div class="metric-card">
+<div class="metric-number">
+96%
+</div>
+<div class="metric-label">
+Capacity Factor
+</div>
+</div>
+
+<div class="metric-card">
+<div class="metric-number">
+40 yrs
+</div>
+<div class="metric-label">
+Plant Lifetime
+</div>
+</div>
+
+<div class="metric-card">
+<div class="metric-number">
+8%
+</div>
+<div class="metric-label">
+Internal Rate of Return
+</div>
+</div>
+
+<div class="metric-card">
+<div class="metric-number">
+6–8 yrs
+</div>
+<div class="metric-label">
+Estimated Development Timeline
+</div>
+</div>
+
+</div>
+
+<div class="highlight">
+
+<h2>
+Project Overview
+</h2>
+
+<p>
+
+Large-scale renewable energy projects demand far more than thermodynamic analysis. This project combined geological resource assessment, technology selection, technoeconomic modeling, revenue optimization, environmental impact analysis, permitting strategy, transmission infrastructure planning, and stakeholder engagement to evaluate whether a utility-scale geothermal facility could be successfully deployed in northeastern Nevada.
+
+</p>
+
+</div>
+
+<div class="overview-grid">
+
+<div class="overview-card">
+
+<h3>
+The Challenge
+</h3>
+
+<p>
+
+Determine whether a blind stratigraphic geothermal resource in Mary's River Basin could support a commercially viable 30 MW binary-cycle power plant while navigating geological uncertainty, regulatory complexity, and community concerns.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+The Solution
+</h3>
+
+<p>
+
+Develop a systems-level engineering framework that integrates resource characterization, economic analysis, grid interconnection, environmental stewardship, and long-term operational strategy to identify technical opportunities and project risks.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="quote-block">
+
+<p>
+
+“Engineering decisions rarely depend on a single equation. Successful infrastructure projects emerge from balancing technical performance, economics, uncertainty, regulation, environmental stewardship, and human relationships.”
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contributions">
+
+<div class="container">
+
+<div class="section-subtitle">
+My Contributions
+</div>
+
+<h2>
+What I Contributed
+</h2>
+
+<p style="max-width:800px;margin-bottom:60px;">
+
+This project required systems-level thinking across engineering, economics, environmental science, and policy. Rather than focusing solely on power cycle performance, I developed an integrated framework for evaluating technical feasibility, economic viability, and long-term project risks.
+
+</p>
+
+<div class="metrics-grid">
+
+<div class="metric-card">
+
+<div class="metric-number">
+01
+</div>
+
+<h3>
+Resource Assessment
+</h3>
+
+<p>
+
+Evaluated geothermal reservoirs, subsurface uncertainty, heat flow, permeability requirements, and geological constraints to determine resource viability.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">
+02
+</div>
+
+<h3>
+Technoeconomic Modeling
+</h3>
+
+<p>
+
+Developed CAPEX, OPEX, revenue stack, payback period, and IRR models using NREL and DOE datasets.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">
+03
+</div>
+
+<h3>
+Optimization
+</h3>
+
+<p>
+
+Analyzed dispatch strategies and investigated how electricity pricing affected profitability and plant operation.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">
+04
+</div>
+
+<h3>
+Systems Engineering
+</h3>
+
+<p>
+
+Integrated transmission infrastructure, permitting pathways, environmental constraints, and stakeholder considerations into the overall design.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">
+05
+</div>
+
+<h3>
+Risk Assessment
+</h3>
+
+<p>
+
+Identified technical, financial, regulatory, and community-related risks affecting project execution.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">
+06
+</div>
+
+<h3>
+Communication
+</h3>
+
+<p>
+
+Synthesized interdisciplinary research into actionable engineering recommendations.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Engineering Decisions
+</div>
+
+<h2>
+Key Design Decisions
+</h2>
+
+<div class="overview-grid">
+
+<div class="overview-card">
+
+<h3>
+Why Binary Cycle Technology?
+</h3>
+
+<p>
+
+Binary cycle plants offer closed-loop operation, high reliability, and compatibility with moderate-temperature resources. Their ability to provide continuous power with minimal emissions made them an attractive choice for Mary's River Basin.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Why Mary's River Basin?
+</h3>
+
+<p>
+
+Previous geologic investigations and favorable heat flow data suggested significant untapped geothermal potential while maintaining proximity to existing transmission infrastructure.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Why Continuous Production?
+</h3>
+
+<p>
+
+Revenue analysis demonstrated that baseload operation outperformed peaking strategies, maximizing profitability and reducing operational complexity.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Why Systems-Level Analysis?
+</h3>
+
+<p>
+
+Technical performance alone does not determine project success. Permitting, stakeholder relationships, financing, and environmental constraints ultimately shape whether infrastructure can be built.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Engineering Process
+</div>
+
+<h2>
+Project Development Timeline
+</h2>
+
+<div style="margin-top:80px;display:flex;flex-direction:column;gap:40px;">
+
+<div class="overview-card">
+
+<h3>
+Research and Geological Screening</h3>
+
+<p>
+
+Investigated geothermal reservoirs, regional geology, heat flow, and historical studies to establish project feasibility.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Technology Selection</h3>
+
+<p>
+
+Compared geothermal power generation methods and selected a binary-cycle architecture capable of providing reliable baseload electricity.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Economic Modeling</h3>
+
+<p>
+
+Built cost and revenue models to evaluate capital expenditures, operating costs, annual profits, and internal rate of return.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Optimization and Dispatch Analysis</h3>
+
+<p>
+
+Evaluated multiple operational strategies to determine whether continuous production or dynamic dispatch maximized returns.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Environmental Impact Analysis</h3>
+
+<p>
+
+Studied water use, emissions, induced seismicity, habitat disruption, and ecosystem considerations.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Permitting and Stakeholder Analysis</h3>
+
+<p>
+
+Mapped regulatory pathways and evaluated relationships between federal agencies, tribal communities, utilities, and local residents.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Final Recommendation</h3>
+
+<p>
+
+Integrated technical, financial, and societal factors into a comprehensive assessment of project viability.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Systems Thinking
+</div>
+
+<h2>
+Beyond Thermodynamics</h2>
+
+<div class="hero-grid" style="margin-top:80px;">
+
+<div>
+
+<p style="margin-bottom:40px;">
+
+One of the biggest lessons from this project was realizing that infrastructure projects rarely fail because of poor engineering equations. More often, uncertainty, economics, regulations, and stakeholder relationships become the dominant constraints.
+
+</p>
+
+<p style="margin-bottom:40px;">
+
+This project forced me to think beyond traditional engineering calculations and consider how technical decisions interact with finance, environmental policy, community acceptance, and long-term operational risk.
+
+</p>
+
+<p>
+
+The result was a much broader understanding of systems engineering and the realities of deploying energy infrastructure at utility scale.
+
+</p>
+
+</div>
+
+<div class="hero-image">
+
+PLACEHOLDER FOR PROCESS GRAPHIC
+
+Research
+
+↓
+
+Modeling
+
+↓
+
+Optimization
+
+↓
+
+Environmental Analysis
+
+↓
+
+Permitting
+
+↓
+
+Stakeholder Engagement
+
+↓
+
+Final Recommendation
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Tools & Methods
+</div>
+
+<h2>
+Technical Skills Demonstrated
+</h2>
+
+<div style="display:flex;flex-wrap:wrap;gap:20px;margin-top:60px;">
+
+<div class="secondary-button">Python</div>
+
+<div class="secondary-button">Economic Modeling</div>
+
+<div class="secondary-button">Optimization</div>
+
+<div class="secondary-button">Energy Systems</div>
+
+<div class="secondary-button">Systems Engineering</div>
+
+<div class="secondary-button">Risk Assessment</div>
+
+<div class="secondary-button">Excel</div>
+
+<div class="secondary-button">Grid Integration</div>
+
+<div class="secondary-button">Environmental Analysis</div>
+
+<div class="secondary-button">Technoeconomic Analysis</div>
+
+<div class="secondary-button">Stakeholder Engagement</div>
+
+<div class="secondary-button">Decision Making Under Uncertainty</div>
+
+<div class="secondary-button">Data Analysis</div>
+
+<div class="secondary-button">Research</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Engineering Challenges
+</div>
+
+<h2>
+Major Technical Risks
+</h2>
+
+<p style="max-width:800px;margin-bottom:70px;">
+
+Large-scale energy projects are fundamentally exercises in uncertainty management. Throughout this project, I identified and analyzed the risks that would ultimately determine whether the plant could transition from concept to operation.
+
+</p>
+
+<div class="metrics-grid">
+
+<div class="metric-card">
+
+<div class="metric-number">01</div>
+
+<h3>
+Reservoir Uncertainty
+</h3>
+
+<p>
+
+Blind stratigraphic systems present substantial subsurface uncertainty. Resource confirmation drilling represents one of the highest-risk investments because unfavorable results could render the entire project uneconomic.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">02</div>
+
+<h3>
+Thermal Decline
+</h3>
+
+<p>
+
+Long-term reservoir sustainability depends on reinjection strategies and thermal breakthrough management to maintain output over decades of operation.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">03</div>
+
+<h3>
+Grid Interconnection
+</h3>
+
+<p>
+
+Transmission infrastructure and utility approval timelines become critical-path items that strongly influence deployment schedules.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">04</div>
+
+<h3>
+Community Acceptance
+</h3>
+
+<p>
+
+Public perception, tribal consultation, and land-use concerns can create project delays even when technical performance is strong.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">05</div>
+
+<h3>
+Permitting Complexity
+</h3>
+
+<p>
+
+Federal, state, county, utility, and tribal stakeholders all influence project execution, creating overlapping regulatory requirements.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">06</div>
+
+<h3>
+Financial Risk
+</h3>
+
+<p>
+
+Large capital requirements and extended development timelines demand robust economic analysis before investment decisions can be justified.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Technoeconomic Analysis
+</div>
+
+<h2>
+Balancing Engineering and Economics
+</h2>
+
+<div class="hero-grid" style="margin-top:80px;">
+
+<div>
+
+<p style="margin-bottom:40px;">
+
+One of the most interesting aspects of this project was recognizing that engineering optimization does not necessarily maximize economic performance.
+
+</p>
+
+<p style="margin-bottom:40px;">
+
+I evaluated capital expenditures, operating costs, revenue streams, electricity market dynamics, and plant utilization strategies to determine how technical decisions influence profitability.
+
+</p>
+
+<p>
+
+This process highlighted the importance of considering engineering systems through both physical and financial lenses.
+
+</p>
+
+</div>
+
+<div class="hero-image">
+
+PLACEHOLDER FOR
+
+Revenue Model
+
+IRR Analysis
+
+Cash Flow Plot
+
+Capacity Factor Comparison
+
+8760 Dispatch Data
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Regulatory Strategy
+</div>
+
+<h2>
+More Than Just Engineering
+</h2>
+
+<div class="overview-grid">
+
+<div class="overview-card">
+
+<h3>
+Federal Agencies</h3>
+
+<p>
+
+Development required understanding permitting pathways involving BLM, DOE, NEPA reviews, environmental assessments, and geothermal leasing processes.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+State-Level Requirements</h3>
+
+<p>
+
+Nevada regulations surrounding drilling permits, water resources, and environmental protection created additional constraints on project execution.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Utility Interconnection</h3>
+
+<p>
+
+Transmission studies and agreements with NV Energy introduced schedule uncertainty and infrastructure considerations.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Local Stakeholders</h3>
+
+<p>
+
+County governments, ranchers, wildlife groups, and nearby residents all influence whether a project gains social acceptance.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Community Outreach
+</div>
+
+<h2>
+Building Social License</h2>
+
+<div class="highlight">
+
+<h2>
+Engineering Success Depends on People
+</h2>
+
+<p>
+
+Technical feasibility alone does not guarantee project success. Effective communication, trust, transparency, and stakeholder engagement are equally important components of infrastructure deployment.
+
+</p>
+
+</div>
+
+<div class="overview-grid" style="margin-top:70px;">
+
+<div class="overview-card">
+
+<h3>
+Ranching Communities</h3>
+
+<p>
+
+Developed strategies focused on minimizing land-use disruptions and maintaining productive relationships with local agricultural stakeholders.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Tribal Consultation</h3>
+
+<p>
+
+Recognized the importance of engaging with the Te-Moak Tribe and respecting the cultural significance of Western Shoshone lands.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Wildlife Conservation</h3>
+
+<p>
+
+Considered habitat preservation and mitigation measures for protected species throughout project development.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Public Education</h3>
+
+<p>
+
+Identified opportunities to address misinformation and improve public understanding of geothermal energy technologies.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Thinking Like an Owner
+</div>
+
+<h2>
+Engineering Through the Lens of Project Risk
+</h2>
+
+<div class="quote-block">
+
+<p>
+
+This project changed the way I think about engineering. Instead of asking "Can this system work?", I began asking "Should this system be built?", "Who does it affect?", and "What risks determine success or failure?" Those questions ultimately proved more valuable than any individual calculation.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Lessons Learned
+</div>
+
+<h2>
+Key Takeaways
+</h2>
+
+<div class="metrics-grid">
+
+<div class="metric-card">
+
+<div class="metric-number">01</div>
+
+<h3>
+Systems Thinking
+</h3>
+
+<p>
+
+Complex engineering problems require balancing technical, economic, and societal constraints simultaneously.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">02</div>
+
+<h3>
+Optimization Matters
+</h3>
+
+<p>
+
+The best physical design does not always produce the best economic outcome.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">03</div>
+
+<h3>
+Uncertainty Is Inevitable
+</h3>
+
+<p>
+
+Engineering decisions must be made despite incomplete information and changing assumptions.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">04</div>
+
+<h3>
+Communication Is Engineering
+</h3>
+
+<p>
+
+Successful projects depend on relationships just as much as calculations.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">05</div>
+
+<h3>
+Infrastructure Is Interdisciplinary
+</h3>
+
+<p>
+
+Large-scale systems require expertise spanning thermodynamics, economics, policy, and stakeholder management.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">06</div>
+
+<h3>
+Engineering Is Decision Making
+</h3>
+
+<p>
+
+The most valuable skill developed during this project was learning how to make decisions under uncertainty.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Visual Story
+</div>
+
+<h2>
+Project Gallery
+</h2>
+
+<p style="max-width:750px;margin-bottom:60px;">
+
+Large engineering projects are built through layers of analysis, iteration, and communication. Replace the placeholders below with figures, maps, spreadsheets, Python outputs, and diagrams from the project.
+
+</p>
+
+<div class="overview-grid">
+
+<div class="hero-image">
+
+MARY'S RIVER BASIN LOCATION MAP
+
+</div>
+
+<div class="hero-image">
+
+GEOLOGIC CROSS SECTION
+
+</div>
+
+<div class="hero-image">
+
+POWER PLANT PROCESS DIAGRAM
+
+</div>
+
+<div class="hero-image">
+
+8760 DISPATCH MODEL OUTPUT
+
+</div>
+
+<div class="hero-image">
+
+ECONOMIC MODEL / CASHFLOW
+
+</div>
+
+<div class="hero-image">
+
+PERMITTING FLOWCHART
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Project Impact
+</div>
+
+<h2>
+Why This Project Matters
+</h2>
+
+<div class="metrics-grid">
+
+<div class="metric-card">
+
+<div class="metric-number">⚡</div>
+
+<h3>
+Clean Baseload Energy</h3>
+
+<p>
+
+Explored the potential for firm renewable generation capable of supporting grid reliability and decarbonization.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">📈</div>
+
+<h3>
+Economic Thinking</h3>
+
+<p>
+
+Integrated technical performance with cost models and revenue optimization to evaluate project feasibility.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">🌎</div>
+
+<h3>
+Environmental Stewardship</h3>
+
+<p>
+
+Studied emissions, land use, water resources, and ecological impacts associated with geothermal development.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">⚙️</div>
+
+<h3>
+Systems Engineering</h3>
+
+<p>
+
+Combined engineering, economics, regulation, and stakeholder engagement into one integrated framework.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">📊</div>
+
+<h3>
+Decision Making</h3>
+
+<p>
+
+Applied quantitative analysis to guide engineering decisions under uncertainty.
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<div class="metric-number">🤝</div>
+
+<h3>
+Human Factors</h3>
+
+<p>
+
+Recognized that successful infrastructure requires trust, communication, and community engagement.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Technical Skills Demonstrated
+</div>
+
+<h2>
+Methods and Tools</h2>
+
+<div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:50px;">
+
+<div class="secondary-button">Python</div>
+
+<div class="secondary-button">Excel</div>
+
+<div class="secondary-button">Optimization</div>
+
+<div class="secondary-button">Data Analysis</div>
+
+<div class="secondary-button">Economic Modeling</div>
+
+<div class="secondary-button">Systems Engineering</div>
+
+<div class="secondary-button">Energy Systems</div>
+
+<div class="secondary-button">Life Cycle Analysis</div>
+
+<div class="secondary-button">Environmental Analysis</div>
+
+<div class="secondary-button">Risk Assessment</div>
+
+<div class="secondary-button">Grid Integration</div>
+
+<div class="secondary-button">Stakeholder Engagement</div>
+
+<div class="secondary-button">Technical Communication</div>
+
+<div class="secondary-button">Technoeconomic Analysis</div>
+
+<div class="secondary-button">Research</div>
+
+<div class="secondary-button">Decision Making Under Uncertainty</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<div class="container">
+
+<div class="highlight">
+
+<h2>
+What This Project Taught Me
+</h2>
+
+<p>
+
+This case study fundamentally changed how I think about engineering. I entered the project expecting to optimize thermodynamic performance, but I left with a much broader appreciation for how economics, uncertainty, regulations, stakeholder relationships, and environmental considerations shape the success of large-scale systems.
+
+The most important lesson was that engineering is ultimately about making decisions under uncertainty and balancing competing objectives to create solutions that are technically sound, economically viable, and socially responsible.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-subtitle">
+Why Recruiters Should Care
+</div>
+
+<h2>
+Capabilities Demonstrated</h2>
+
+<div class="overview-grid">
+
+<div class="overview-card">
+
+<h3>
+Systems Thinking</h3>
+
+<p>
+
+Integrated technical, economic, environmental, and societal constraints into a single engineering framework.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Quantitative Analysis</h3>
+
+<p>
+
+Applied modeling, optimization, and economic analysis to support engineering decisions.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Communication</h3>
+
+<p>
+
+Translated complex interdisciplinary concepts into actionable recommendations.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>
+Engineering Judgment</h3>
+
+<p>
+
+Learned to make decisions under uncertainty while balancing competing priorities.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer style="padding:140px 0;border-top:1px solid rgba(255,255,255,.05);margin-top:100px;">
+
+<div class="container">
+
+<div style="max-width:800px;">
+
+<div class="section-subtitle">
+Let's Build Something
+</div>
+
+<h2>
+
+Interested in energy systems, sustainability, or multidisciplinary engineering?
+
+</h2>
+
+<p style="margin-top:30px;font-size:1.1rem;max-width:700px;">
+
+I'm passionate about tackling complex engineering challenges that sit at the intersection of technology, economics, and sustainability. Feel free to reach out if you'd like to collaborate or discuss opportunities.
+
+</p>
+
+<div style="margin-top:50px;display:flex;gap:20px;flex-wrap:wrap;">
+
+<a href="contact.html" class="primary-button">
+
+Contact Me
+
+</a>
+
+<a href="index.html" class="secondary-button">
+
+Return Home
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
+
