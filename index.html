@@ -356,6 +356,82 @@
       color: #9ca3af;
       margin-bottom: 2rem;
     }
+    
+        /* Container to center the button */
+    .construction-container {
+      text-align: center;
+      margin: 4rem 0 2rem 0;
+      position: relative;
+      z-index: 2;
+    }
+    
+    /* Base button styling */
+    .construction-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: #0b0b0c; /* Dark text for contrast against yellow */
+      text-decoration: none;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(218, 95, 33, 0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    /* Hazard Tape Background Pattern */
+    .tape-stripes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        -45deg,
+        #f59e0b,
+        #f59e0b 20px,
+        #18181b 20px,
+        #18181b 40px
+      );
+      z-index: 1;
+      transition: opacity 0.2s ease;
+    }
+    
+    /* Text banner badge layered over the tape */
+    .btn-text {
+      position: relative;
+      z-index: 2;
+      background: #f59e0b; /* Safety Yellow */
+      color: #000000;
+      padding: 0.5rem 1.25rem;
+      border-radius: 2px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Hover effects */
+    .construction-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
+    }
+    
+    .construction-btn:hover .tape-stripes {
+      animation: moveStripes 1s linear infinite;
+    }
+    
+    /* Animated hazard stripes on hover */
+    @keyframes moveStripes {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 56px 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -380,29 +456,17 @@
     <!-- HERO MAIN SECTION -->
     <section class="hero">
       <span class="hero-tag">Environmental Science and Engineering</span>
-      <h1>Connecting technical engineering design with sustainable environmental systems.</h1>
-      <p>Specializing in geometric CAD modeling, functional physical prototyping for extreme aquatic environments, and end-to-end techno-economic power systems analysis.</p>
+      <h1>Hi, I'm Sava</h1>
+      <p>I study Environmental Science and Engineering at Harvard and I've done a lot of projects along the way. Come check out my work that spans mechanical and electrical design, environmental studies, gadget prototyping, and computational modeling.</p>
       <div class="hero-buttons">
-        <a href="projects.html" class="btn-primary">Explore Projects</a>
-      </div>
-    </section>
-
-    <!-- CORE CAPABILITIES CHIPS -->
-    <section class="skills-section">
-      <div class="skills-title">Core Capabilities &amp; Tools</div>
-      <div class="chips-container">
-        <div class="chip">Autodesk Fusion 360</div>
-        <div class="chip">Python Data Analysis</div>
-        <div class="chip">MATLAB Simulation</div>
-        <div class="chip">Additive Manufacturing</div>
-        <div class="chip">Techno-Economic Modeling</div>
+        <a href="projects.html" class="btn-primary">All Projects</a>
       </div>
     </section>
 
     <!-- MAIN PROJECTS SECTION -->
     <section id="work">
       <div class="projects-header">
-        <h2>Featured Systems</h2>
+        <h2>Featured Projects</h2>
         <span>Selected Works (2026)</span>
       </div>
 
@@ -418,9 +482,9 @@
           </div>
           <div class="card-footer">
             <div class="tech-used">
-              <span class="tech-tag">Fusion 360</span>
+              <span class="tech-tag">Fusion 360, Prototyping, Wet Lab</span>
             </div>
-            <a href="/marine-monitor.html" class="project-link">View System Details →</a>
+            <a href="/marine-monitor.html" class="project-link">View Project →</a>
           </div>
         </div>
 
@@ -430,25 +494,26 @@
             <div class="card-meta">
               <span class="card-tag">Simulation / Economics</span>
             </div>
-            <h3>Renewable Energy Techno-Economic Analysis</h3>
-            <p>An end-to-end technical proposal and simulation for a grid-scale utility project. Quantified lifetime asset expenditures (OPEX), regional grid loading integration, and critical internal financial returns (IRR).</p>
+            <h3>Renewable Energy Economic Analysis</h3>
+            <p>An end-to-end technical proposal and simulation for a grid-scale utility project. Quantified lifetime asset expenditures, regional grid loading integration, ecological impacts, and critical internal financial returns.</p>
           </div>
           <div class="card-footer">
             <div class="tech-used">
               <span class="tech-tag">Python</span>
             </div>
-            <a href="/energy-analysis.html" class="project-link">View Analysis Case →</a>
+            <a href="/energy-analysis.html" class="project-link">View Project →</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- CALL TO ACTION FOOTER -->
-    <footer>
-      <h3>Interested in collaborating?</h3>
-      <p>Seeking technical challenges at the intersection of infrastructure, deployment, and data modeling.</p>
-      <a href="/contact.html" class="btn-secondary">Let's Connect</a>
-    </footer>
+    
+        <!-- NOW BUILDING SECTION -->
+    <div class="construction-container">
+      <a href="now.html" class="construction-btn">
+        <span class="tape-stripes"></span>
+        <span class="btn-text">🚧 Projects in Progress 🚧</span>
+      </a>
+    </div>
 
   </div>
 
