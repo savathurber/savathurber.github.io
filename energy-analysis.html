@@ -67,6 +67,8 @@ h1 {
     line-height: 1.02;
     letter-spacing: -.055em;
     font-weight: 800;
+    text-align: center;  /* Centers the title text */
+    margin: 0 auto;
 }
 
 h2 {
@@ -176,14 +178,13 @@ nav {
 }
 
 .hero-grid {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    gap: 80px;
-    align-items: center;
+    display: block;
+
 }
 
 .hero h1 {
-    max-width: 780px;
+    max-width: 100%;
+    text-align: left;
 }
 
 .hero-description {
@@ -191,6 +192,7 @@ nav {
     margin-top: 32px;
     font-size: 1.12rem;
     color: #a6abb3;
+    text-align: left;
 }
 
 .hero-buttons {
