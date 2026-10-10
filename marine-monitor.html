@@ -1,572 +1,293 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Biodegradable Gas Generation System | Sava Thurber</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-body{
-background:#0b0b0c;
-color:#f3f4f6;
-font-family:'Inter',sans-serif;
-line-height:1.6;
-overflow-x:hidden;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:0 2rem;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:1rem 0;
-border-bottom:1px solid rgba(255,255,255,.05);
-}
-
-.logo{
-font-weight:700;
-font-size:1.2rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
-  display: contents;
-}
-
-
-.nav-links a{
-text-decoration:none;
-color:#9ca3af;
-font-size:.9rem;
-transition:.2s;
-}
-
-.nav-links a:hover{
-color:white;
-}
-
-.cta-nav{
-background:white;
-color:black!important;
-padding:.5rem 1.2rem;
-border-radius:2rem;
-font-weight:600;
-}
-
-.hero{
-text-align:center;
-padding:7rem 0;
-max-width:850px;
-margin:auto;
-}
-
-.hero-tag{
-text-transform:uppercase;
-letter-spacing:.15em;
-font-size:.75rem;
-font-weight:700;
-color:#7bab83;
-margin-bottom:1rem;
-display:block;
-}
-
-.hero h1{
-font-size:3.7rem;
-font-weight:800;
-letter-spacing:-.04em;
-line-height:1.1;
-margin-bottom:2rem;
-}
-
-.hero p{
-color:#9ca3af;
-font-size:1.2rem;
-margin-bottom:3rem;
-}
-
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:1rem;
-flex-wrap:wrap;
-}
-
-.btn-primary{
-background:#1e7034;
-color:white;
-padding:.9rem 2rem;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-}
-
-.btn-secondary{
-border:1px solid rgba(255,255,255,.1);
-padding:.9rem 2rem;
-border-radius:6px;
-text-decoration:none;
-color:white;
-}
-
-section{
-margin-bottom:7rem;
-}
-
-.section-title{
-font-size:2rem;
-font-weight:700;
-margin-bottom:2rem;
-letter-spacing:-.03em;
-}
-
-.overview-grid,
-.metrics-grid,
-.challenge-grid,
-.contribution-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:2rem;
-}
-
-.card{
-background:rgba(255,255,255,.015);
-border:1px solid rgba(255,255,255,.05);
-padding:2rem;
-border-radius:14px;
-transition:.3s;
-}
-
-.card:hover{
-border-color:rgba(218,95,33,.3);
-background:rgba(255,255,255,.03);
-}
-
-.card h3{
-margin-bottom:1rem;
-font-size:1.3rem;
-}
-
-.card p{
-color:#9ca3af;
-}
-
-.metric{
-text-align:center;
-padding:2.5rem;
-}
-
-.metric-number{
-font-size:2.8rem;
-font-weight:800;
-color:#7bab83;
-margin-bottom:1rem;
-}
-
-.timeline{
-border-left:2px solid rgba(255,255,255,.08);
-padding-left:2rem;
-display:flex;
-flex-direction:column;
-gap:3rem;
-}
-
-.timeline-item h3{
-margin-bottom:.5rem;
-}
-
-.timeline-item p{
-color:#9ca3af;
-}
-
-.image-placeholder{
-height:450px;
-border-radius:14px;
-border:1px dashed rgba(255,255,255,.1);
-display:flex;
-align-items:center;
-justify-content:center;
-color:#6b7280;
-margin-top:2rem;
-}
-
-.quote{
-padding:3rem;
-border-left:4px solid #1e7034;
-background:rgba(255,255,255,.02);
-font-size:1.15rem;
-color:#d1d5db;
-}
-
-.chips{
-display:flex;
-flex-wrap:wrap;
-gap:.8rem;
-}
-
-.chip{
-padding:.5rem 1rem;
-border-radius:2rem;
-background:rgba(255,255,255,.03);
-border:1px solid rgba(255,255,255,.08);
-color:#d1d5db;
-font-size:.9rem;
-}
-
-footer{
-border-top:1px solid rgba(255,255,255,.05);
-padding:5rem 0;
-text-align:center;
-}
-
-footer h2{
-margin-bottom:1rem;
-}
-
-footer p{
-color:#9ca3af;
-margin-bottom:2rem;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:2.7rem;
-}
-
-.overview-grid,
-.metrics-grid,
-.challenge-grid,
-.contribution-grid{
-grid-template-columns:1fr;
-}
-
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marine Propulsion | Sava Thurber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0b0c;
+      --panel: #121315;
+      --text: #f5f5f5;
+      --muted: #9ca3af;
+      --green: #72a67b;
+      --border: rgba(255,255,255,.07);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: "Inter", sans-serif; line-height: 1.65; overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, 90%); margin: auto; }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(11,11,12,.82); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,.055);
+    }
+    .nav-inner {
+      width: min(1180px, 92%); margin: auto; padding: 18px 0;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .logo { font-size: .95rem; font-weight: 700; letter-spacing: -.02em; }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a { color: var(--muted); font-size: .88rem; }
+    .nav-links a:hover { color: white; }
+    .nav-contact, .button-primary {
+      background: #1f7137; color: white !important; border-radius: 8px;
+      padding: 10px 17px; font-weight: 600;
+    }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 12px 20px; border-radius: 8px; font-size: .9rem; font-weight: 600;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary:hover { background: #278544; }
+    .button-secondary { border: 1px solid rgba(255,255,255,.13); color: #e5e7eb; }
+    .button-secondary:hover { border-color: rgba(255,255,255,.3); }
+    section { padding: 88px 0; border-top: 1px solid rgba(255,255,255,.05); }
+    .hero {
+      border-top: 0; padding: 125px 0 110px;
+      background: radial-gradient(circle at 75% 30%, rgba(55,105,66,.13), transparent 34%);
+    }
+    .hero-content { max-width: 900px; }
+    .section-label {
+      color: var(--green); font-size: .75rem; font-weight: 700;
+      letter-spacing: .16em; text-transform: uppercase; margin-bottom: 17px;
+    }
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 5rem); line-height: 1.04;
+      letter-spacing: -.055em; font-weight: 800; max-width: 900px;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 3.6vw, 2.8rem); line-height: 1.12;
+      letter-spacing: -.04em; margin-bottom: 22px;
+    }
+    h3 { font-size: 1.12rem; line-height: 1.3; margin-bottom: 10px; }
+    p { color: var(--muted); font-size: .98rem; }
+    .hero p { max-width: 760px; margin-top: 26px; font-size: 1.1rem; color: #a6abb3; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .green { color: var(--green); }
+    .overview-grid, .contribution-grid, .metrics-grid {
+      display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; margin-top: 32px;
+    }
+    .card {
+      background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 28px;
+      transition: border-color .25s ease, transform .25s ease;
+    }
+    .card:hover { border-color: rgba(114,166,123,.3); transform: translateY(-3px); }
+    .card p { font-size: .92rem; }
+    .metrics-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+    .metric { text-align: left; }
+    .metric-number { color: var(--green); font-size: 2rem; font-weight: 800; letter-spacing: -.04em; margin-bottom: 5px; }
+    .metric-label { color: #858b94; font-size: .82rem; }
+    .section-intro { max-width: 760px; }
+    .pipeline { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 12px; margin-top: 35px; }
+    .step {
+      background: var(--panel); border: 1px solid var(--border); border-radius: 15px; padding: 23px 20px;
+      min-height: 190px;
+    }
+    .step-number { color: var(--green); font-size: .72rem; font-weight: 700; letter-spacing: .12em; }
+    .step h3 { margin-top: 25px; }
+    .step p { font-size: .85rem; }
+    .timeline { margin-top: 32px; padding-left: 25px; border-left: 1px solid rgba(255,255,255,.14); display: grid; gap: 27px; }
+    .timeline-item { position: relative; }
+    .timeline-item::before {
+      content: ""; position: absolute; left: -31px; top: 8px; width: 10px; height: 10px;
+      border-radius: 50%; background: var(--green);
+    }
+    .timeline-item p { max-width: 780px; font-size: .92rem; }
+    .result-panel {
+      background: radial-gradient(circle at 85% 45%, rgba(114,166,123,.12), transparent 35%), var(--panel);
+      border: 1px solid var(--border); border-radius: 22px; padding: 42px;
+    }
+    .result-panel p { max-width: 780px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 25px; }
+    .chip {
+      border: 1px solid rgba(255,255,255,.1); border-radius: 999px;
+      color: #c5c9ce; padding: 7px 12px; font-size: .8rem;
+    }
+    .report { text-align: center; }
+    .report p { max-width: 650px; margin: 0 auto 24px; }
+    footer { border-top: 1px solid var(--border); padding: 25px 0; color: #666c74; font-size: .76rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+    @media (max-width: 900px) {
+      .pipeline { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .metrics-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    }
+    @media (max-width: 650px) {
+      .nav-links a:not(.nav-contact) { display: none; }
+      .hero { padding: 85px 0 75px; }
+      section { padding: 65px 0; }
+      .overview-grid, .contribution-grid, .metrics-grid, .pipeline { grid-template-columns: 1fr; }
+      .step { min-height: auto; }
+      .result-panel { padding: 28px 22px; }
+      .footer-inner { flex-direction: column; }
+    }
+  </style>
 </head>
-
 <body>
+  <nav>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">SAVA THURBER</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="container">
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="section-label">Marine Robotics · Harvard Biorobotics Lab Collaboration</div>
+        <h1>Biodegradable Gas Generation System for <span class="green">Autonomous Marine Propulsion</span></h1>
+        <p>
+          I designed and experimentally tested a passive oxygen-generation system for marine-robot propulsion, targeting pressurized gas delivery without mechanical actuation.
+        </p>
+        <!--
+        <div class="hero-actions">
+          <a class="button button-primary" href="#results">View Results</a>
+          <a class="button button-secondary" href="#report">Read Full Report</a>
+        </div>
+        -->
+      </div>
+    </section>
 
-<nav>
+    <section>
+      <div class="container">
+        <div class="section-label">Project Summary</div>
+        <div class="overview-grid">
+          <div>
+            <h2>How can a biodegradable marine robot generate useful propulsion pressure without a conventional power system?</h2>
+          </div>
+          <div>
+            <p>
+              The project developed a passive gas-generation mechanism for underwater propulsion. My teammates and I investigated hydrogen-peroxide decomposition with yeast and iterated through release mechanisms to improve pressure generation, gas delivery, and reliability while using water-soluble and biodegradable materials.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--
+    <section>
+      <div class="container">
+        <div class="section-label">Key Results</div>
+        <h2>Prototype performance</h2>
+        <div class="metrics-grid">
+          <div class="card metric"><div class="metric-number">40 PSI</div><div class="metric-label">Gas pressure achieved</div></div>
+          <div class="card metric"><div class="metric-number">4</div><div class="metric-label">Design-build-test iterations</div></div>
+          <div class="card metric"><div class="metric-number">Passive</div><div class="metric-label">Operation without mechanical actuation</div></div>
+          <div class="card metric"><div class="metric-number">O₂</div><div class="metric-label">Generated propellant gas</div></div>
+        </div>
+      </div>
+    </section>
+-->
 
-<div class="logo">SAVA'S PORTFOLIO</div>
+    <section>
+      <div class="container">
+        <div class="section-label">Engineering Workflow</div>
+        <div class="section-intro">
+          <h2>Iterative design and testing</h2>
+          <p>Each design-build-test cycle addressed practical limits in reaction control, release geometry, sealing, and delivery of gas to the propulsion subsystem.</p>
+        </div>
+        <div class="pipeline">
+          <div class="step"><div class="step-number">01 / VALIDATE</div><h3>Reaction feasibility</h3><p>Tested hydrogen peroxide and yeast as a gas-generation chemistry.</p></div>
+          <div class="step"><div class="step-number">02 / RELEASE</div><h3>Capsule concepts</h3><p>Evaluated staged delivery using gelatin capsules.</p></div>
+          <div class="step"><div class="step-number">03 / GEOMETRY</div><h3>Flow mechanisms</h3><p>Investigated funnel and spiral geometries for controlled release.</p></div>
+          <div class="step"><div class="step-number">04 / REFINE</div><h3>Washer stack</h3><p>Developed a weighted, water-soluble paper mechanism.</p></div>
+          <div class="step"><div class="step-number">05 / INTEGRATE</div><h3>Propulsion test</h3><p>Integrated the final mechanism with the propulsion team's system.</p></div>
+        </div>
+      </div>
+    </section>
+<!--
+    <section>
+      <div class="container">
+        <div class="section-label">Engineering Contributions</div>
+        <h2>From concept generation to system integration</h2>
+        <div class="contribution-grid">
+          <div class="card"><h3>Concept development</h3><p>Generated and screened controlled-release architectures using morphological analysis and iterative design.</p></div>
+          <div class="card"><h3>Prototype fabrication</h3><p>Designed vessel concepts and fabricated proof-of-concept mechanisms for bench testing.</p></div>
+          <div class="card"><h3>Experimental characterization</h3><p>Conducted pressure-generation, flow, leak, and subsystem-integration tests.</p></div>
+          <div class="card"><h3>Failure analysis</h3><p>Investigated foaming, residue-related clogging, sealing failures, and inconsistent reaction control.</p></div>
+        </div>
+      </div>
+    </section>
+-->
+<!--
+    <section id="results">
+      <div class="container">
+        <div class="section-label">Outcome & Lessons</div>
+        <div class="result-panel">
+          <h2>The challenge was controlling pressure—not simply generating it.</h2>
+          <p>
+            The final washer-stack design used water-soluble paper and weighted structures to increase reaction surface area, reduce clogging, and maintain passive operation. Testing demonstrated pressure generation, sustained flow, pressure recovery after venting, and successful propulsion-system integration.
+          </p>
+        </div>
+        <div class="chips" aria-label="Tools and methods">
+          <span class="chip">Fusion 360</span>
+          <span class="chip">Experimental Design</span>
+          <span class="chip">Pressure Testing</span>
+          <span class="chip">System Integration</span>
+          <span class="chip">Rapid Prototyping</span>
+          <span class="chip">Failure Analysis</span>
+        </div>
+      </div>
+    </section>
+    
+-->
 
-<div class="nav-links">
-<a href="/index.html">Home</a>
-<a href="/about-me.html">About Me</a>
-<a href="/projects.html">Projects</a>
-<a href="/contact.html" class="cta-nav">Contact</a>
-</div>
+    <section class="report" id="report">
+      <div class="container">
+        <div class="section-label">Full Project Documentation</div>
+        <h2>Please read the full report :)</h2>
+        <p>For the complete project background, design process, and experimental details, see the full project document.</p>
+         
+      <a 
+                href="https://github.com/savathurber/savathurber.github.io/releases/download/v1.0/Final.Documentation.pdf" 
+                target="_blank" 
+                style="display: inline-block; margin-top: 15px; padding: 12px 24px; font-weight: 600; border-radius: 8px; text-decoration: none;" target="_blank" class="button button-secondary">
+                Open Full Report
+        </a>
+      </div>
+    </section>
+    <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vTnCeqZCV3GLq9NhHoiVzSP4x43cdOOdsP8qe0mGevoUS4QjpHvZ3pl6SiyE5ccEg/pub?embedded=true"></iframe>-->
+    
+    <section class="closing" style="text-align: center;">
 
-</nav>
+    <div class="container">
+        <p>
+            There's so much more to explore...
+        </p>
 
-<section class="hero">
+        <div class="closing-buttons">
 
-<span class="hero-tag">Harvard Biorobotics Lab Collaboration</span>
+            <a
+                href="index.html"
+                class="button button-primary"
+            >
+                Back to Portfolio
+            </a>
 
-<h1>Biodegradable Gas Generation System for Autonomous Marine Propulsion</h1>
+        </div>
 
-<p>
-Designed and experimentally validated a passive oxygen-generation system capable of delivering pressurized gas for propulsion while maintaining biodegradability and eliminating mechanical actuation.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#prototype" class="btn-primary">
-View Final Prototype
-</a>
-
-<a href="/projects.html" class="btn-secondary">
-Back to Projects
-</a>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Project Overview</h2>
-
-<div class="overview-grid">
-
-<div class="card">
-
-<h3>Problem</h3>
-
-<p>
-Traditional power systems are difficult to integrate into biodegradable marine robots. The challenge was to generate pressurized gas in a fully passive and environmentally compatible manner for underwater propulsion.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Solution</h3>
-
-<p>
-Using catalytic decomposition of hydrogen peroxide with yeast, our team designed and tested several controlled-release mechanisms before demonstrating successful propulsion system integration.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Key Metrics</h2>
-
-<div class="metrics-grid">
-
-<div class="card metric">
-<div class="metric-number">40 PSI</div>
-Gas Pressure Achieved
-</div>
-
-<div class="card metric">
-<div class="metric-number">4</div>
-DBT Iterations
-</div>
-
-<div class="card metric">
-<div class="metric-number">100%</div>
-Passive Operation
-</div>
-
-<div class="card metric">
-<div class="metric-number">O₂</div>
-Generated Propellant
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Engineering Contributions</h2>
-
-<div class="contribution-grid">
-
-<div class="card">
-<h3>Concept Generation</h3>
-<p>
-Generated and screened multiple controlled-release architectures using morphological analysis and iterative design.
-</p>
-</div>
-
-<div class="card">
-<h3>Prototype Development</h3>
-<p>
-Designed vessel concepts and fabricated numerous proof-of-concept mechanisms.
-</p>
-</div>
-
-<div class="card">
-<h3>Experimental Testing</h3>
-<p>
-Performed pressure generation, flow characterization, leak testing, and subsystem integration experiments.
-</p>
-</div>
-
-<div class="card">
-<h3>Failure Analysis</h3>
-<p>
-Investigated clogging, foaming, residue accumulation, sealing failures, and reaction control challenges.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Design Evolution</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-<h3>DBT 1 — Chemistry Validation</h3>
-<p>Verified that hydrogen peroxide and yeast could produce useful pressures.</p>
-</div>
-
-<div class="timeline-item">
-<h3>DBT 2 — Capsule Mechanisms</h3>
-<p>Tested staged delivery concepts using gelatin capsules.</p>
-</div>
-
-<div class="timeline-item">
-<h3>DBT 3 — Funnel and Spiral Designs</h3>
-<p>Investigated controlled-release geometries and flow behavior.</p>
-</div>
-
-<div class="timeline-item">
-<h3>DBT 4 — Washer Stack Mechanism</h3>
-<p>Developed a weighted water-soluble paper system with improved control.</p>
-</div>
-
-<div class="timeline-item">
-<h3>Final Integration Testing</h3>
-<p>Successfully powered the propulsion team's system.</p>
-</div>
-
-</div>
+    </div>
 
 </section>
+  </main>
 
-<section>
-
-<h2 class="section-title">Technical Challenges</h2>
-
-<div class="challenge-grid">
-
-<div class="card">
-<h3>Reaction Control</h3>
-<p>
-Bulk mixing produced excessive foam and unstable gas production.
-</p>
-</div>
-
-<div class="card">
-<h3>Clogging</h3>
-<p>
-Yeast residue frequently blocked valves and tubing.
-</p>
-</div>
-
-<div class="card">
-<h3>Sealing</h3>
-<p>
-Pressure leaks prevented reliable measurements and system operation.
-</p>
-</div>
-
-<div class="card">
-<h3>Gas Delivery</h3>
-<p>
-Flow stability became equally important as pressure generation.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="prototype">
-
-<h2 class="section-title">Final Prototype</h2>
-
-<p style="color:#9ca3af;">
-The final washer-stack design used water-soluble paper and weighted structures to increase reaction surface area, reduce clogging, and maintain passive operation.
-</p>
-
-<div class="image-placeholder">
-Insert final prototype image here
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Testing Results</h2>
-
-<div class="metrics-grid">
-
-<div class="card metric">
-✓<br><br>
-Reached 40 PSI
-</div>
-
-<div class="card metric">
-✓<br><br>
-Produced Sustained Flow
-</div>
-
-<div class="card metric">
-✓<br><br>
-Pressure Recovery After Venting
-</div>
-
-<div class="card metric">
-✓<br><br>
-Successful Propulsion Demonstration
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Lessons Learned</h2>
-
-<div class="quote">
-
-"The biggest challenge was not generating pressure—it was controlling it. Through repeated prototyping and failure analysis, the project evolved from a chemistry problem into a systems-engineering challenge involving geometry, materials, flow control, and reliability."
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Tools & Technologies</h2>
-
-<div class="chips">
-
-<div class="chip">Fusion 360</div>
-<div class="chip">Experimental Design</div>
-<div class="chip">Pressure Testing</div>
-<div class="chip">System Integration</div>
-<div class="chip">Additive Manufacturing</div>
-<div class="chip">Failure Analysis</div>
-<div class="chip">Rapid Prototyping</div>
-<div class="chip">Root Cause Analysis</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<h2>Interested in collaborating?</h2>
-
-<p>
-Seeking opportunities in sustainable systems, marine robotics, product development, and experimental engineering.
-</p>
-
-<a href="/contact.html" class="btn-secondary">
-Let's Connect
-</a>
-
-</footer>
-
-</div>
-
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Sava Thurber</span>
+      <span>Marine Robotics · Sustainable Systems · Experimental Engineering</span>
+    </div>
+  </footer>
 </body>
 </html>
-```
